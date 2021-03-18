@@ -1,0 +1,147 @@
+.item{
+    color: var(--text-color-light-mode);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+.item img{
+    max-width: 50px;
+    width: 100%;
+    border-radius: 50%;
+}
+.postHeader{
+    display: flex;
+    justify-content: space-between;
+
+}
+.postHeaderLeft{
+    display: flex;
+    align-items: center;
+}
+
+.postHeaderRight{
+    position: relative;
+}
+
+.deletePostButtonBlock{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+}
+.deletePostButton{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    color: rgba(0,0,0, .5);
+    background-color: transparent;
+    transition: all .1s  linear;
+}
+.deletePostButton:hover{
+    color: rgba(0,0,0, 1);
+
+}
+
+.postDeleteTooltip {
+    cursor: pointer;
+    /*visibility: hidden;*/
+    opacity: 0;
+    font-size: 15px;
+    background-color: rgba(255,1,1, 0.5);
+    color: #000;
+    text-align: center;
+    /*padding: 4px 7px;*/
+    padding: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all .1s linear;
+    transition-delay: .3s, 0s;
+}
+
+.deletePostButtonBlock:hover .postDeleteTooltip {
+    /*visibility: visible;*/
+    padding: 4px 7px;
+    opacity: 1;
+}
+
+.postDeleteTooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 255, 255, 0.3) transparent;
+}
+
+
+
+
+.author{
+    margin-left: 10px;
+}
+.photo{
+
+    object-fit: cover;
+}
+
+.datetime{
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0, 0.8);
+}
+.date{
+    font-size: 12px;
+}
+.time{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.author a{
+    color:inherit;
+    text-decoration: none;
+}
+.author a:hover{
+    text-decoration: underline;
+}
+.content p{
+    margin: 10px 0;
+}
+.marking{
+    display: flex;
+}
+.btn__like, .btn__comm{
+    /*box-shadow: 0 0 5px #000;*/
+    border-radius: 5px;
+    display: block;
+    background-color: rgba(255,0,0, 0.7);
+    border: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 0;
+}
+.btn__like, .btn__comm:focus{
+    outline: none;
+}
+
+.btn__like, .btn__comm{
+
+}
+
+
+

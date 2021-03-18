@@ -1,0 +1,63 @@
+.dialogsItem {
+    width: 200px;
+}
+
+.dialog_item {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+    width: 100%;
+    height: 70px;
+    font-size: 15px;
+    text-align: center;
+
+    /*position: relative;*/
+}
+
+.dialogPhoto {
+
+    border-radius: 3px;
+    overflow: hidden;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.dialogPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dialog_item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dialog_item.active {
+    color: #D14134;
+}
+
+.dialogsItemRight {
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+.dialogName {
+    font-size: 17px;
+    text-align: left;
+}
+
+.shortMessage {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

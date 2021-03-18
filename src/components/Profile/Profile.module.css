@@ -1,0 +1,18 @@
+.profile{
+    margin: var(--margin-top-any-blocks) auto 0;
+    background-color: var(--background-elements-light-mode);
+    width: 775px;
+    overflow: hidden;
+    border-radius: 5px;
+    /*border: 1px var(--border-color) solid;*/
+    padding-bottom: 30px;
+    /*animation-name: profile;*/
+    /*animation-duration: .8s;*/
+    /*animation-timing-function: ease-out;*/
+    box-shadow:  0 0 15px 10px rgba(0, 0, 0, .1);
+}
+/*@keyframes profile {*/
+/*    from{margin-top: 100vh;}*/
+/*    to{margin: var(--margin-top-any-blocks) auto 0;}*/
+/*}*/
+

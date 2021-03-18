@@ -1,0 +1,169 @@
+.usersPagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.selectedPage{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.preloaderBlock{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+.preloaderBlock img{
+    height: 25px;
+}
+
+.users {
+    margin: var(--margin-top-any-blocks) auto 0;
+    width: 775px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow:  0 0 15px 10px rgba(0, 0, 0, .1);
+}
+
+
+.usersList {
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /*height: calc(100vh - var(--header-height));*/
+    background-color: var(--background-elements-light-mode);
+    /*border-radius: 12px;*/
+
+}
+
+.userItem {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 35%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 260px;
+    padding: 14px 19px;
+    border-bottom: 2px var(--blue-elements) solid;
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.userItemLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+.userItemLink:hover{
+
+}
+
+.userPhotoBlock {
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.userPhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.userInfoLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.userNameInfo {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    transition: all .1s linear;
+    margin: 12px 0;
+}
+.userNameInfo:hover {
+    color: #039BE5;
+    font-size: 19px;
+}
+
+.userNameInfoLink {
+    text-decoration: none;
+    color: inherit;
+
+}
+.userFullname {
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+.followButtonBlock {
+    width: 150px;
+
+}
+
+
+.followButton {
+    width: 100%;
+    padding: 5px 20px;
+    margin: 0;
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(197, 212, 227, 0.7);
+    transition: background-color .2s ease;
+}
+
+.followButton:hover {
+    background-color: rgba(197, 212, 227, 1);
+}
+
+.userPhoto {
+    object-fit: cover;
+
+}
+
+/*.buttonLoadMoreUsersBlock {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.buttonLoadMoreUsers {*/
+/*    width: 200px;*/
+/*    height: 40px;*/
+/*    padding: 5px 20px;*/
+/*    margin-top: 30px;*/
+/*    border: none;*/
+/*    font-family: inherit;*/
+/*    font-size: 17px;*/
+/*    border-radius: 10px;*/
+/*    outline: none;*/
+/*    background-color: rgba(197, 212, 227, 0.7);*/
+/*    transition: background-color .2s ease;*/
+/*}*/
+
+/*.buttonLoadMoreUsers:hover {*/
+/*    background-color: rgba(197, 212, 227, 1);*/
+/*}*/

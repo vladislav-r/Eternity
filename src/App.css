@@ -1,0 +1,65 @@
+*,
+:before,
+:after{
+    box-sizing: border-box;
+}
+:root {
+    --margin-top-any-blocks: 80px;
+    --header-height: 56px;
+
+    --border-color: #393A3B;
+    --background-color: #18191A;
+    --element-background-color: #242526;
+    --main-color:#E4E6EB;
+    --input-background-dark-mode: rgba(58,59,60, 1);
+    --navItem-hover-bg-dark: rgba(66, 67, 68, 1);
+
+
+    --background-color-light-mode: rgba(240,242,245, 1);
+    --background-elements-light-mode: rgba(255,255,255, 1);
+    --text-color-light-mode: rgba(5,5,5,1);
+
+
+    --scrollbar-track-dark-mode: rgba(21,21,21, 1);
+    --webkit-scrollbar-thumb-dark-mode: rgba(239,239,239, 1);
+
+
+    --scrollbar-track-light-mode: rgba(230,230,230, 1);
+    --webkit-scrollbar-thumb-light-mode: rgba(5,5,5,1);
+
+    --blue-elements: rgba(3,155,229, 1);
+    --lm-bg-messages: rgba(0,132,255, 1);
+
+    --scrollBarHover: rgba(2,137,204, 1);
+
+
+}
+body{
+    color: var(--text-color-light-mode) !important;
+    background-color: var(--background-color-light-mode);
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+    background: var(--scrollbar-track-light-mode);
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue-elements);
+    border-radius: 3px;
+    transition: background-color .2s ease;
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--scrollBarHover);
+
+}
